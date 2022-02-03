@@ -1,0 +1,135 @@
+body{
+    background-color: black;
+    color: white;
+
+    /* vh--> viewport height and vw--> is viewport width */
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+.score_style{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bubble{
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    border: 1px solid rgb(243,239,239);
+    opacity: 0.9;
+    animation: flying 5s infinite ease-in;
+    width: 100px;
+    height: 100px;
+}
+
+.bubble:nth-child(1){
+    left:5%;
+    animation-duration: 7s;
+}
+.bubble:nth-child(2){
+    left:10%;
+    animation-duration: 15s;
+}
+.bubble:nth-child(3){
+    left:15%;
+    animation-duration: 6s;
+}
+.bubble:nth-child(4){
+    left:20%;
+    animation-duration: 9.5s;
+}
+.bubble:nth-child(5){
+    left:25%;
+    animation-duration: 6.2s;
+}
+.bubble:nth-child(6){
+    left:30%;
+    animation-duration: 18s;
+}
+.bubble:nth-child(8){
+    left:35%;
+    animation-duration: 4.87s;
+}
+.bubble:nth-child(9){
+    left:40%;
+    animation-duration: 8.2s;
+}
+.bubble:nth-child(10){
+    left:45%;
+    animation-duration: 5.5s;
+}
+.bubble:nth-child(11){
+    left:50%;
+    animation-duration: 12s;
+}
+.bubble:nth-child(12){
+    left:55%;
+    animation-duration: 9.2s;
+}
+.bubble:nth-child(13){
+    left:60%;
+    animation-duration: 8.9s;
+}
+.bubble:nth-child(14){
+    left:65%;
+    animation-duration: 16.7s;
+}
+.bubble:nth-child(15){
+    left:70%;
+    animation-duration: 8s;
+}
+.bubble:nth-child(16){
+    left:75%;
+    animation-duration: 10.1s;
+}
+.bubble:nth-child(17){
+    left:80%;
+    animation-duration: 5.4s;
+}
+.bubble:nth-child(18){
+    left:85%;
+    animation-duration: 11.2s;
+}
+.bubble:nth-child(19){
+    left:87%;
+    animation-duration: 9.1s;
+}
+.bubble:nth-child(20){
+    left:72%;
+    animation-duration: 7.2s;
+}
+.bubble:nth-child(21){
+    left:8%;
+    animation-duration: 6.4s;
+}
+.bubble:nth-child(22){
+    left: 16%;
+    animation-duration: 10.8s;
+}
+.bubble:nth-child(23){
+    left:72%;
+    animation-duration: 10.8s;
+}
+.bubble:nth-child(24){
+    left:6%;
+    animation-duration: 10.8s;
+}
+.bubble:nth-child(25){
+    left:18%;
+    animation-duration: 10.8s;
+}
+
+@keyframes flying {
+    0%{
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        bottom: 1080px;
+        transform: translateX(-200px);
+    }
+    
+}
